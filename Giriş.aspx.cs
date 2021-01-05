@@ -14,6 +14,8 @@ namespace CRMDeneme
         protected void Page_Load(object sender, EventArgs e)
         {
             lblUyarı.Visible = false;
+            //Sayfa yüklendiğinde görünen kısım
+            //Girişin sağlanıp sağlanmadığı kontrolünü yapan uyarı label'ı
 
 
 
