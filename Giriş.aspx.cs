@@ -26,6 +26,7 @@ namespace CRMDeneme
             
 
             SqlConnection baglanti = new SqlConnection(@"Data Source=LAPTOP-3A5PSISC;Initial Catalog=login;Integrated Security=True");
+            //Veri tabanı yolu ekleme kısmı 
             SqlCommand sorgu = new SqlCommand("SELECT * FROM Login WHERE KulAdi=@KulAdi AND KulTipi=@KulTipi AND KulSifre=@KulSifre", baglanti);
 
             sorgu.Parameters.AddWithValue("@KulAdi", SqlDbType.VarChar).Value = KulAdi.Text;
